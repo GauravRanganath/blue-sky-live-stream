@@ -1,4 +1,16 @@
 <!DOCTYPE html>
+
+<!-
+
+#4B9282 - Viridian
+#FFFFF1 - Ivory
+#666666 - Dove Gray
+#A19893 - Slate gray
+#C5BAB5 - Light Gray
+#C0C0C0 - Gray
+
+-->
+
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,50 +46,47 @@
     
     <body>
     
-        <iframe name=”hidden_iframe” id=”hidden_iframe” style=”display:none;” onload=”if(submitted) class="hide-form"{window.location="http://blueskysolar.utoronto.ca/"}”></iframe> 
+        <iframe name=”hidden_iframe” id=”hidden_iframe” style=”display:none;” onload=”if(submitted) class="hide-form"{window.location="http://blueskysolar.utoronto.ca/"}”> </iframe> 
     
         <div class="content-wrapper">
             <div class="title">
-               
                 <h2 class="subtitle">Blue Sky Solar Racing</h2>
                 <h1 class="title-heading">Gen X Unveiling</h1>
                 <h2 class="subtitle">Livestream</h2>
-                
             </div>
             
             <div class="column-wrapper">
-                <div class="column left">
+                <div class="column left" id="left">
                     <h1 class="dictionary-title">Viridian</h1>
                     <h2 class="dictionary">vi·​rid·​i·​an | və-ˈri-dē-ən</h2><br>
                     <h2 class="dictionary">proper noun</h2>
                     <h2 class="dictionary">(1) Blue Sky Solar Racing's 10th Generation car.</h2><br>
                     <h2 class="dictionary">noun</h2>
                     <h2 class="dictionary">(1) a bluish-green pigment.</h2><br>
-                    <p>
+                    <p class="dic-desc">
                         Viridian was chosen as the Gen X solar car name for what it represents to the team. To pay homage to the past cars the team has built, Viridian is a shade of blue, but it is a blue-green colour. It shows evolution from the first solar car, Blue, and adeviation from the norm.
                     </p>
                 </div>
                 
-                <div class="column right">
-                    <h2 class="info-text-3"><span style="letter-spacing: 17px;">Watch I</span>t</h2> 
-                    <h2 class="info-text-2"><span style="letter-spacing: 60px;">Liv</span>e</h2>
-                    <h2 class="info-text-3"><span style="letter-spacing: 11px;">June 24th | 1 P</span>M</h2><br><br>
+                <div class="column right" id=right>
+                   <div class="static-info-container">
+                       <h2 class="info-text-3"><span style="letter-spacing: 17px;">Watch I</span>t</h2> 
+                        <h2 class="info-text-2"><span style="letter-spacing: 60px;">Liv</span>e</h2>
+                        <h2 class="info-text-3"><span style="letter-spacing: 11px;">June 24th | 1 P</span>M</h2>
+                   </div>
                     
-                    <div class="countdown-container">
-                       <p id="timer">
-                           
-                       </p>
-                    </div>
-             
+                    <div class="timer-container"><h3 id="demo" class="timer"></h3></div>
+                    <script src="resources/script.js"></script>
+                                 
                     <script type=”text/javascript”>var submitted=false;</script> 
                     
-                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSffCqPy3en-JEjx-VGScRZC0bl-e0GyffivS2RvYVkKbQRckg/formResponse" method=”post” target=”hidden_iframe” onsubmit=”submitted=true;”> 
+                    <form id="form" action="https://docs.google.com/forms/d/e/1FAIpQLSffCqPy3en-JEjx-VGScRZC0bl-e0GyffivS2RvYVkKbQRckg/formResponse" method=”post” target=”hidden_iframe” onsubmit=”submitted=true;”> 
 
-                        <label>Enter your email</label>
+                        <label class="rec-email">Recieve an email notification</label><br><br>
                     
-                        <input type="text" name="entry.695619948" value="" dir="auto" aria-label="Enter your email  " title="">
+                        <input class="email-input" type="text" name="entry.695619948" value="" dir="auto" placeholder="EMAIL" aria-label="Enter your email" title="">
                     
-                        <input type="submit" name="submit" value="Submit" onclick="window.location.href = 'https://w3docs.com';">
+                        <input class="submit-button" type="submit" name="submit" value="Submit" onclick="hideSignUp()">
                     
                     </form>
                 

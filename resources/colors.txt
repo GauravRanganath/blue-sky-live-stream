@@ -1,0 +1,6 @@
+#4B9282 - Viridian
+#FFFFF1 - Ivory
+#666666 - Dove Gray
+#A19893 - Slate gray
+#C5BAB5 - Light Gray
+#C0C0C0 - Gray
