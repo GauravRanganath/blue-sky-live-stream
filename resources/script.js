@@ -18,10 +18,6 @@ function myFunction(x) {
   }
 }
 
-
-
-
-
 // Set the date we're counting down to
 var countDownDate = new Date("Jun 24, 2019 13:30:00").getTime();
 
@@ -50,3 +46,9 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+
+function hideSignUp(){
+	document.getElementById("form").style.display = "none";
+	document.getElementById("show").style.display = "inline";
+}
