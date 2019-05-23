@@ -49,6 +49,10 @@ var x = setInterval(function() {
 
 
 function hideSignUp(){
-	document.getElementById("form").style.display = "none";
-	document.getElementById("show").style.display = "inline";
+	
+	var inpObj = document.getElementById("email-get");
+  	if (inpObj.checkValidity()) {
+		document.getElementById("form").style.display = "none";
+		document.getElementById("show").style.display = "inline";
+  	}
 }
