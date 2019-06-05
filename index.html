@@ -14,14 +14,9 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="livestream-resources/resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-        <title>Blue Sky Livestream</title>
-        
-        <!-- Bootstrap CSS -->
-   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-        
+        <title>Blue Sky Donation Banner</title>
     </head>
     
     <header> 
@@ -51,8 +46,6 @@
     
     <body>
     
-        <iframe name=”hidden_iframe” id=”hidden_iframe” style=”display:none;” onload=”if(submitted) class="hide-form"{window.location="http://blueskysolar.utoronto.ca/"}”> </iframe> 
-    
         <div class="content-wrapper">
             <div class="title">
                 <h2 class="subtitle">Blue Sky Solar Racing</h2>
@@ -60,9 +53,8 @@
                 <h2 class="subtitle">Livestream</h2>
             </div>
             
-            <div class="row">
-			  <div class="col-sm-4">
-			  	 <div class="column left" id="left">
+            <div class="column-wrapper">
+                <div class="column left" id="left">
                     <h1 class="dictionary-title">Viridian</h1><br>
                     <h2 class="dictionary">proper noun</h2>
                     <h2 class="dictionary">(1) Blue Sky Solar Racing's 10th Generation car.</h2><br>
@@ -72,9 +64,8 @@
                         Viridian was chosen as the Gen X solar car name for what it represents to the team. To pay homage to the past cars the team has built, Viridian is a shade of blue, but it is a blue-green colour. It shows evolution from the first solar car, Blue, and a deviation from the norm.
                     </p>
                 </div>
-			  </div>
-			  <div class="col-sm-8">
-			  	   <div class="column right" id=right>
+                
+                <div class="column right" id=right>
                    <div class="static-info-container">
                        <h2 class="info-text-3"><span style="letter-spacing: 17px;">Watch I</span>t</h2> 
                         <h2 class="info-text-2"><span style="letter-spacing: 60px;">Liv</span>e</h2>
@@ -85,27 +76,13 @@
                     <script src="resources/script.js"></script>
                                  
                     <script type=”text/javascript”>var submitted=false;</script> 
+                     <form id="form" action="https://forms.gle/Ad9BLR3aikVLjFF57"> 
                     
-                    <form id="form" action="https://docs.google.com/forms/d/e/1FAIpQLSffCqPy3en-JEjx-VGScRZC0bl-e0GyffivS2RvYVkKbQRckg/formResponse" method=”post” target=”hidden_iframe” onsubmit=”submitted=true;”> 
-
-                        <label id="change-text" class="rec-email">Recieve an email notification</label><br><br>
-                    
-                        <input id="email-get" class="email-input" type="email" name="entry.695619948" value="" dir="auto" placeholder="EMAIL" aria-label="Enter your email" title="">
-                    
-                        <input id="" class="submit-button" type="submit" name="submit" value="Submit" onclick="hideSignUp()">
+                        <input id="" class="submit-button" type="submit" name="submit" value="Sign Up" onclick="window.location.href = 'https://forms.gle/Ad9BLR3aikVLjFF57'">
                     
                     </form>
-                    
-                    <h1 id="show" style="display: none; text-transform: uppercase; color: white; letter-spacing: 5px; font-size: 18px;">Thank You for Signing up!</h1>
                 
-                  </div>
-			  </div>
-			</div>
-
-            <div class="column-wrapper">
-               
-                
-                                            
+                </div>                            
             </div>
         </div>
     
